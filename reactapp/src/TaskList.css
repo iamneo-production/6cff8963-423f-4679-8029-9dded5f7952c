@@ -1,0 +1,99 @@
+.TaskList {
+    margin-top: 20px;
+  }
+  
+  .TaskList h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .TaskList-filter,
+  .TaskList-sort {
+    display: flex;
+    align-items: center;
+  }
+  
+  .TaskList-filter label,
+  .TaskList-sort label {
+    margin-right: 10px;
+  }
+  
+  .TaskList-filter select,
+  .TaskList-sort select {
+    padding: 8px;
+    border-radius: 4px;
+  }
+  .TaskList-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .TaskList-table th,
+  .TaskList-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .TaskList-table th {
+    background-color: #f5f5f5;
+  }
+  
+  .TaskList-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .TaskList-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .TaskList-actions {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .TaskList-actions button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .TaskList-actions button:nth-child(1) {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .TaskList-actions button:nth-child(2) {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .TaskList-editing input,
+  .TaskList-editing select {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+  }
+  
+  .TaskList-editing .TaskList-actions button {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .TaskList-editing .TaskList-actions button:nth-child(1) {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .TaskList-editing .TaskList-actions button:nth-child(2) {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
