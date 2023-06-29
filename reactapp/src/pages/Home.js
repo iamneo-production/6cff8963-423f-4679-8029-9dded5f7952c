@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8032/users");
+    const result = await axios.get("");
     setUsers(result.data);
   };
 
