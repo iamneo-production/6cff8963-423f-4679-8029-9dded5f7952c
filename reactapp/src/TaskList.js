@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import './TaskList.css';
-//testing saurabh
+import TaskProgressGraph from './TaskProgressGraph';
+
 const TaskList = ({ tasks, onUpdate, onDelete }) => {
   const [editingTaskId, setEditingTaskId] = useState('');
   const [editedTasks, setEditedTasks] = useState({});
   const [filterStatus, setFilterStatus] = useState('');
   const [sortOrder, setSortOrder] = useState('asc');
   const [searchTerm, setSearchTerm] = useState('');
-
+  const [showProgress, setShowProgress] = useState(false);
+// updateforprogress
+  const handleShowProgress = () => {
+    setShowProgress(!showProgress);
+  };
   const handleEdit = (taskId) => {
     setEditingTaskId(taskId);
     setEditedTasks((prevState) => ({
@@ -94,8 +99,18 @@ const TaskList = ({ tasks, onUpdate, onDelete }) => {
   const sortedTasks = applySortOrder(filteredTasks);
 
   return (
-    <div>
-      <h2>Task List</h2>
+    // updated
+    <div className="TaskListprogress">
+    <h2>Task List</h2>
+    <button className="show-progress-button" onClick={handleShowProgress}>
+      {showProgress ? 'Hide Progress' : 'Show Progress'}
+    </button>
+    {showProgress && <TaskProgressGraph tasks={tasks} />}
+    {/* Render your task list here */}
+    
+<div>
+           {/* <TaskProgressGraph tasks={tasks} /> */}
+      {/* <h2>Task List</h2> */}
       <div className="TaskList-controls">
         <div className="TaskList-filter">
           <label>Filter by Status:</label>
@@ -212,13 +227,13 @@ const TaskList = ({ tasks, onUpdate, onDelete }) => {
               <td>
                 {task.isEditing ? (
                   <>
-                    <button onClick={() => handleSave(task.id)}>Save</button>
-                    <button onClick={handleCancel}>Cancel</button>
+                    <button className="save"  onClick={() => handleSave(task.id)}>Save</button>
+                    <button className="cancel"  onClick={handleCancel}>Cancel</button>
                   </>
                 ) : (
                   <>
-                    <button onClick={() => handleEdit(task.id)}>Edit</button>
-                    <button onClick={() => handleDelete(task.id)}>Delete</button>
+                    <button className="edit" onClick={() => handleEdit(task.id)}>Edit</button>
+                    <button className="delete" onClick={() => handleDelete(task.id)}>Delete</button>
                   </>
                 )}
               </td>
@@ -226,6 +241,7 @@ const TaskList = ({ tasks, onUpdate, onDelete }) => {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 };
