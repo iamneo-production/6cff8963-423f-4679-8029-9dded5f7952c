@@ -1,0 +1,40 @@
+.TaskProgressGraph {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: white;
+    margin-top: 10px;
+  }
+  
+  .TaskProgressGraph-bar {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .todo {
+    background-color: #ff8f8f;
+    margin-top: 10px;
+  }
+  
+  .progress {
+    background-color: #ffca8f;
+  }
+  
+  .complete {
+    background-color: #8fff8f;
+  }
+  
+  .status-name {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .status-percentage {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
