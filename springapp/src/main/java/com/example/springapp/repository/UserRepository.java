@@ -1,4 +1,4 @@
-package com.example.usersmanagerbackend.repository;
+package com.example.springapp.repository;
 
 
 import com.example.usersmanagerbackend.entity.User;

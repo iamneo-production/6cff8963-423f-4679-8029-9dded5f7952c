@@ -1,7 +1,7 @@
-package com.example.usersmanagerbackend.controller;
+package com.example.springapp.controller;
 
-import com.example.usersmanagerbackend.entity.User;
-import com.example.usersmanagerbackend.repository.UserRepository;
+import com.example.springapp.entity.User;
+import com.example.springapp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;

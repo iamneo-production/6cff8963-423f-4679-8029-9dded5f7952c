@@ -1,4 +1,4 @@
-package com.example.usersmanagerbackend.entity;
+package com.example.springapp.entity;
 
 import javax.persistence.* ;
 import java.time.LocalDate;
