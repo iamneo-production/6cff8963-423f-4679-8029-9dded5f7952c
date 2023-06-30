@@ -8,6 +8,7 @@ const TaskForm = ({ onAddTask, taskId }) => {
   const [status, setStatus] = useState('');
   const [employeeName, setEmployeeName] = useState('');
   const [employeeId, setEmployeeId] = useState('');
+  const [priority, setPriority] = useState();
   const [errors, setErrors] = useState({});
 
   const handleSubmit = (e) => {
@@ -57,6 +58,7 @@ const TaskForm = ({ onAddTask, taskId }) => {
       status,
       employeeName,
       employeeId,
+      priority,
     };
 
     // Pass the new task to the onAddTask callback prop
@@ -70,6 +72,7 @@ const TaskForm = ({ onAddTask, taskId }) => {
     setEmployeeName('');
     setEmployeeId('');
     setErrors({});
+    setPriority('');
   };
 
   return (
@@ -137,8 +140,24 @@ const TaskForm = ({ onAddTask, taskId }) => {
             <p className="error">{errors.employeeId}</p>
           )}
         </div>
+        <div>
+          <label>Priority:</label>
+          <select
+            value={priority}
+            onChange={(e) => setPriority(e.target.value)}
+          >
+            <option value="">Select Priority</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
         <button type="submit">Submit</button>
       </form>
     </div>
   );
 };
+
+export default TaskForm;

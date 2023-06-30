@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import TaskForm from './TaskForm';
 import Home from './Home';
 import TaskList from './TaskList';
+import './App.css'
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -38,18 +39,20 @@ const App = () => {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
+      <nav className="nav-bar">
+        <div >
+          <ul className="nav-list">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">Home</Link>
             </li>
-            <li>
-              <Link to="/task-form">Task Form</Link>
+            <li className="nav-item">
+              <Link to="/task-form" className="nav-link">Task Form</Link>
             </li>
-            <li>
-              <Link to="/task-list">Task List</Link>
+            <li className="nav-item">
+              <Link to="/task-list" className="nav-link">Task List</Link>
             </li>
           </ul>
+          </div>
         </nav>
 
         <Routes>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './TaskList.css';
-//testing saurabh
+
 const TaskList = ({ tasks, onUpdate, onDelete }) => {
   const [editingTaskId, setEditingTaskId] = useState('');
   const [editedTasks, setEditedTasks] = useState({});
@@ -93,6 +93,14 @@ const TaskList = ({ tasks, onUpdate, onDelete }) => {
 
   const sortedTasks = applySortOrder(filteredTasks);
 
+  const generateStars = (priority) => {
+    const stars = [];
+    for (let i = 0; i < priority; i++) {
+      stars.push(<span key={i} className="star">*</span>);
+    }
+    return stars;
+  };
+
   return (
     <div>
       <h2>Task List</h2>
@@ -127,6 +135,7 @@ const TaskList = ({ tasks, onUpdate, onDelete }) => {
             <th>Status</th>
             <th>Employee Name</th>
             <th>Employee ID</th>
+            <th>Priority</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -207,6 +216,24 @@ const TaskList = ({ tasks, onUpdate, onDelete }) => {
                   />
                 ) : (
                   task.employeeId
+                )}
+              </td>
+              <td>
+                {task.isEditing ? (
+                  <select
+                    name="priority"
+                    value={editedTasks[task.id]?.priority || ''}
+                    onChange={(e) => handleInputChange(e, task.id)}
+                  >
+                    <option value="">Select Priority</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                ) : (
+                  generateStars(task.priority) // Display stars based on priority
                 )}
               </td>
               <td>
