@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import HeaderListUser from './HeaderCreateUser';
 import { validateEmail, validateName, validatePassword } from './ValidationUtils';
 import '../components_styles/create_user.css';
-
+//CreateUser
 export default function CreateUser() {
   const [formData, setFormData] = useState({
     name: '',
