@@ -1,17 +1,5 @@
 package com.example.springapp;
 
-<<<<<<< HEAD
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class SpringappApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-=======
 import static org.junit.Assert.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -113,5 +101,4 @@ class SpringappApplicationTests {
       File file = new File(filePath);
       assertTrue(file.exists() && file.isFile());;
       }
->>>>>>> 1361ad71cbcdca673e862fb05cd1f45be171da99
 }
