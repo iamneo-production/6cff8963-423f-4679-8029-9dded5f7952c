@@ -95,7 +95,7 @@ const TaskList = ({ tasks, onUpdate, onDelete }) => {
     .filter(applyFilter)
     .filter(applySearchTerm)
     .map((task) => ({ ...task, isEditing: editingTaskId === task.id }));
-
+//Priority
   const sortedTasks = applySortOrder(filteredTasks);
    const generateStars = (priority) => {
     const stars = [];
