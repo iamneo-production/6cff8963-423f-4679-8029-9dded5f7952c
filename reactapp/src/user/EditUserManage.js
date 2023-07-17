@@ -214,4 +214,4 @@ const EditUserManage = () => {
   );
 };
 
-export default EditUserManage
+export default EditUserManage;
