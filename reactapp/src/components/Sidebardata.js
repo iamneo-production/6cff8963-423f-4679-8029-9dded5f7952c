@@ -1,0 +1,65 @@
+import React from 'react';
+import * as FaIcons from "react-icons/fa"
+import * as AiIcons from "react-icons/ai"
+import * as IoIcons from "react-icons/io"
+import * as BsIcons from "react-icons/bs"
+import * as CgIcons from "react-icons/cg"
+import { IoPencil} from "react-icons/io5";
+import { IoCheckboxSharp } from "react-icons/io5";
+import { MdPolicy,MdRateReview ,MdHelpCenter} from "react-icons/md";
+import { IoDesktop } from "react-icons/io5";
+import { BsBank2 } from "react-icons/bs";
+
+
+export const Sidebardata=[
+    {
+        title:'Home',
+        path:'/home',
+        icon:<AiIcons.AiFillHome/>,
+        cName:'nav-text'
+    },
+    {
+        title:'Personal Details',
+        path:'/details',
+        icon:<BsIcons.BsPersonCircle/>,
+        cName:'nav-text'
+    }
+    ,
+
+    {
+        title:'User',
+        path:'/candidates',
+        icon:<IoCheckboxSharp/>,
+        cName:'nav-text'
+    }
+    ,
+    {
+        title:'Userlist',
+        path:'/userlist',
+        icon:<CgIcons.CgNotes/>,
+        cName:'nav-text'
+    },
+    
+    {
+        title:'Task',
+        path:'/work',
+        icon:<IoPencil/>,
+        cName:'nav-text'
+    }
+    ,{
+        title:'Tasklist',
+        path:'/tasklist',
+        icon:<MdPolicy/>,
+        cName:'nav-text'
+    }
+    ,
+    ,{
+        title:'DashBoard ',
+        path:'/dashboard',
+        icon:<BsBank2/>,
+        cName:'nav-text'
+    }
+    ,
+    
+    
+]

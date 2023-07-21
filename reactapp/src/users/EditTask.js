@@ -1,21 +1,20 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function EditUser() {
   let navigate = useNavigate();
 
   const { id } = useParams();
- const [user, setUser] = useState({
-    name: "",
-    email: "",
-    taskname:"",
-    description:"",
-    duedate:"",
+
+  const [user, setUser] = useState({
+    taskname: "",
+    description: "",
+    duedate: "",
     status:"",
   });
 
- const { name, email,taskname,description,duedate,status } = user;
+  const { taskname, description, duedate,status } = user;
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -27,12 +26,11 @@ export default function EditUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:8032/user/${id}`, user);
-    navigate("/");
+    await axios.put(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/user/${id}`, user);
   };
 
   const loadUser = async () => {
-    const result = await axios.get(`http://localhost:8032/user/${id}`);
+    const result = await axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/user/${id}`);
     setUser(result.data);
   };
 
@@ -40,69 +38,43 @@ export default function EditUser() {
     <div className="container">
       <div className="row">
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4">Edit User</h2>
+          <h2 className="text-center m-4">Edit Task</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
-           <div className="mb-3">
-              <label htmlFor="Name" className="form-label">
-                Name
+             <div className="mb-3">
+              <label htmlFor="taskname" className="form-label">
+                Taskname
               </label>
               <input
                 type={"text"}
                 className="form-control"
-                placeholder="Enter name"
-                name="name"
-                value={name}
-                onChange={(e) => onInputChange(e)}
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="Email" className="form-label">
-                E-mail
-              </label>
-              <input
-                type={"text"}
-                className="form-control"
-                placeholder="Enter  e-mail address"
-                name="email"
-                value={email}
-                onChange={(e) => onInputChange(e)}
-              />
-            </div>
-                <div className="mb-3">
-              <label htmlFor="Taskname" className="form-label">
-               TaskName
-              </label>
-              <input
-                type={"text"}
-                className="form-control"
-                placeholder="Enter Taskname"
+                placeholder="Enter your taskname"
                 name="taskname"
                 value={taskname}
                 onChange={(e) => onInputChange(e)}
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="Description" className="form-label">
-              Description
+              <label htmlFor="description" className="form-label">
+               Description  
               </label>
               <textarea
                 type={"text"}
                 className="form-control"
-                placeholder="Enter Description"
+                placeholder="Enter your description"
                 name="description"
                 value={description}
                 onChange={(e) => onInputChange(e)}
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="DueDate" className="form-label">
+              <label htmlFor="duedate" className="form-label">
               DueDate
               </label>
               <input
                 type={"text"}
                 className="form-control"
-                placeholder="Enter  Duedate"
+                placeholder="Enter Date"
                 name="duedate"
                 value={duedate}
                 onChange={(e) => onInputChange(e)}
@@ -121,10 +93,11 @@ export default function EditUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
+           
             <button type="submit" className="btn btn-outline-primary">
               Submit
             </button>
-            <Link className="btn btn-outline-danger mx-2" to="/">
+            <Link className="btn btn-outline-danger mx-2" to="/home">
               Cancel
             </Link>
           </form>
