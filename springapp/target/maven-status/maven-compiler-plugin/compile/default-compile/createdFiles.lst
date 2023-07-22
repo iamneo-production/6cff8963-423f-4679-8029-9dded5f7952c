@@ -1,9 +1,9 @@
-com/example/springapp/service/TaskService.class
 com/example/springapp/repository/TaskRepo.class
+com/example/springapp/service/TaskService.class
 com/example/springapp/SpringappApplication.class
-com/example/springapp/model/Task.class
 com/example/springapp/service/UserService.class
-com/example/springapp/controller/TaskController.class
+com/example/springapp/model/Task.class
 com/example/springapp/repository/UserRepo.class
+com/example/springapp/controller/TaskController.class
 com/example/springapp/controller/UserController.class
 com/example/springapp/model/User.class
