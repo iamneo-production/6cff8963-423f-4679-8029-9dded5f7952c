@@ -7,11 +7,11 @@
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/UserDetailsRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/AuthorityDetailsRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/exception/TaskNotFoundException.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/Task.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/request/AuthenticationRequest.java
+/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/Task.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/service/CustomUserService.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/User.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/RegisterRepo.java
+/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/User.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/config/JWTTokenHelper.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/exception/TaskNotFoundAdvice.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/response/UserInfo.java
@@ -22,8 +22,8 @@
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/controller/AppController.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/service/AuthorityService.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/config/RestAuthentication.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/Register.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/TaskRepository.java
+/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/Register.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/exception/UserException.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/exception/UserNotFoundAdvice.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/config/SecurityConfiguration.java

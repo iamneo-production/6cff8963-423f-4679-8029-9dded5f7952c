@@ -5,9 +5,9 @@ com/example/springapp/model/User.class
 main/java/com/example/springapp/exception/UserException.class
 com/example/springapp/config/RestAuthentication.class
 com/example/springapp/controller/TaskController.class
-com/example/springapp/exception/TaskNotFoundAdvice.class
 com/example/springapp/controller/UserManageController.class
 com/example/springapp/service/CustomUserService.class
+com/example/springapp/exception/TaskNotFoundAdvice.class
 com/example/springapp/repository/AuthorityDetailsRepository.class
 com/example/springapp/model/Register.class
 com/example/springapp/controller/AuthenticationController.class
