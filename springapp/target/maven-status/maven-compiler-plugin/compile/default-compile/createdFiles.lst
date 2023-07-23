@@ -16,8 +16,8 @@ main/java/com/example/springapp/exception/UserNotFoundAdvice.class
 com/example/springapp/repository/TaskRepository.class
 com/example/springapp/service/AuthorityService.class
 com/example/springapp/request/AuthenticationRequest.class
-com/example/springapp/config/SecurityConfiguration.class
 com/example/springapp/config/JWTAuthenticationFilter.class
+com/example/springapp/config/SecurityConfiguration.class
 com/example/springapp/response/LoginResponse.class
 TaskService.class
 com/example/springapp/model/Task.class
