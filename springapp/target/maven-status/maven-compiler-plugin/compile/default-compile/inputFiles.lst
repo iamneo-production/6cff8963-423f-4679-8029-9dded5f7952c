@@ -3,7 +3,6 @@
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/controller/AuthenticationController.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/controller/TaskController.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/response/LoginResponse.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/service/TaskService.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/UserDetailsRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/AuthorityDetailsRepository.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/exception/TaskNotFoundException.java
@@ -19,8 +18,8 @@
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/controller/UserManageController.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/Authority.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/config/JWTAuthenticationFilter.java
-/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/controller/AppController.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/service/AuthorityService.java
+/home/coder/project/workspace/springapp/src/main/java/com/example/springapp/controller/AppController.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/config/RestAuthentication.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/model/Register.java
 /home/coder/project/workspace/springapp/src/main/java/com/example/springapp/repository/TaskRepository.java
