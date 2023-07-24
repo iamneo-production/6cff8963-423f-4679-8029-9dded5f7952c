@@ -14,12 +14,12 @@ function AdminDisplay() {
   }, []);
 
   const loadData = async () => {
-    const result = await axios.get(`http://localhost:8017/usermanage`);
+    const result = await axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/users`);
     setDetails(result.data);
   };
 
   const deleteUser = async (id) => {
-    await axios.delete(`http://localhost:8017/usermanage/${id}`);
+    await axios.delete(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/users/${id}`);
     loadData();
   };
 

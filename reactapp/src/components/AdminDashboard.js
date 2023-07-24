@@ -16,7 +16,7 @@ const AdminDashboard = () => {
   }, [users]);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8017/users");
+    const result = await axios.get("https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks");
     setUsers(result.data);
   };
 

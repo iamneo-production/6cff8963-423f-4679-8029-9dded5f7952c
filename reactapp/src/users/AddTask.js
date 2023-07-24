@@ -21,7 +21,7 @@ export default function AddTask() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8017/user", user);
+    await axios.post("https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks", user);
     // navigate("/");
   };
 
