@@ -105,7 +105,7 @@ function Home(props) {
 
           axios({
             method:'POST',
-            url:`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/addCandidate`,
+            url:`http://localhost:8017/addCandidate`,
             headers:{
               'Authorization':'Bearer '  + localStorage.getItem('USER_KEY'),
               'Content-Type': 'application/json'

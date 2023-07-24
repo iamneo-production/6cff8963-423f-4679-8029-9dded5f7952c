@@ -99,7 +99,7 @@ function Login() {
 
         axios({
           method:'POST',
-          url:`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/changepassword`,
+          url:`http://localhost:8017/changepassword`,
           headers:{
             'Content-Type': 'application/json'
         },
@@ -127,7 +127,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      await axios.post("https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/register", registration);
+      await axios.post("http://localhost:8017/register", registration);
       toast.success('Registration successful!');
     } catch (error) {
       toast.error('Registration failed. Please try again.');
@@ -152,8 +152,8 @@ function Login() {
                   localStorage.setItem('USER_KEY',res.data.token);
                   localStorage.setItem('username',user.userName);
 
-                  axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/${user.userName}`).then(res=>{
-                   
+                  axios.get(`http://localhost:8017/userdetails/${user.userName}`).then(res=>{
+                    // console.log(res);
                     
                     localStorage.setItem('userdata',JSON.stringify(res.data));
 

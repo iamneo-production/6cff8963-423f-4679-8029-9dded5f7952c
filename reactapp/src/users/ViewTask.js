@@ -18,7 +18,7 @@ export default function ViewTask() {
   }, []);
 
   const loadUser = async () => {
-    const result = await axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks/${id}`);
+    const result = await axios.get(`http://localhost:8017/user/${id}`);
     setUser(result.data);
   };
 

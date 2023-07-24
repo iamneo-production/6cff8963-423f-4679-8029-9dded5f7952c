@@ -18,7 +18,7 @@ export default function TaskHome() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks");
+    const result = await axios.get("http://localhost:8017/users");
     const filteredTasks = result.data.filter(user => user.username === mail);
     setUsers(filteredTasks);
   };

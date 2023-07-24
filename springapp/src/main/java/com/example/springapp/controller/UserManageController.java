@@ -35,13 +35,13 @@ public class UserManageController {
 	UserDetailsRepository userrepo;
 	
 
-	@GetMapping("/users")
+	@GetMapping("/usermanage")
 	List<User> getAllUsers(){
 		return userrepo.findAll();
 		
 	}
 
-	@PutMapping("/users/{id}")
+	@PutMapping("/usermanage/{id}")
 	User updateUser(@RequestBody User newUser,@PathVariable Long id) {
 		return userrepo.findById(id).map(user->{
 			user.setUsername(newUser.getFirstname());
@@ -50,7 +50,7 @@ public class UserManageController {
 			return userrepo.save(user);
 		}).orElseThrow(()->new UserNotFoundException(id));
 	}
-	@DeleteMapping("/users/{id}")
+	@DeleteMapping("/usermanage/{id}")
 	String deleteTask(@PathVariable Long id) {
 		if(!userrepo.existsById(id)) {
 			throw new UserNotFoundException(id);
