@@ -19,7 +19,7 @@ function Users() {
   }, [authid, navigate]);
 
   const loadData = async () => {
-    const result = await axios.get(`http://localhost:8017/usermanage`);
+    const result = await axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/users`);
     setDetails(result.data);
     console.log(result.data);
   };

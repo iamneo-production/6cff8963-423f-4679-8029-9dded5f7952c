@@ -14,7 +14,7 @@ export default function UserReport() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8017/users");
+    const result = await axios.get("https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks");
     const filteredTasks = result.data.filter(user => user.username === mail);
     const filterCompleted=users.filter(users=>users.status.toLowerCase() === "complete").length;
     setUsers(filteredTasks);

@@ -15,13 +15,13 @@ const Details = () => {
   const [show, setShow] = useState(false);
   const [authid, setAuthId] = useState(JSON.parse(localStorage.getItem('userdata')).authorities[0].id);
 
-  async function charan() {
-    await axios.get(`http://localhost:8017/userdetails/${localStorage.getItem('username')}`).then((res) => {
+  async function userdetails() {
+    await axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/userdetails/${localStorage.getItem('username')}`).then((res) => {
       localStorage.setItem('userdata', JSON.stringify(res.data));
     });
   }
 
-  charan();
+  userdetails();
 
   const initialValue = {
     firstname: localStorage.getItem('userdata') != null ? JSON.parse(localStorage.getItem('userdata')).firstname : '',
@@ -42,7 +42,7 @@ const Details = () => {
   const handleSubmit = () => {
     axios({
       method: 'POST',
-      url: `http://localhost:8017/details/${localStorage.getItem('username')}`,
+      url: `https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/details/${localStorage.getItem('username')}`,
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('USER_KEY'),
         'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ const Details = () => {
     var em = document.getElementById('cemail').value;
 
     axios
-      .get(`http://localhost:8017/userdetails/${em}`)
+      .get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/${em}`)
       .then((res) => {
         localStorage.setItem('canddetails', JSON.stringify(res.data));
         document.getElementById('card').style.display = 'block';
