@@ -28,12 +28,12 @@ export default function EditTask() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks/${id}`, user);
+    await axios.put(`http://localhost:8017/user/${id}`, user);
    // navigate("/");
   };
 
   const loadUser = async () => {
-    const result = await axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks/${id}`);
+    const result = await axios.get(`http://localhost:8017/user/${id}`);
     setUser(result.data);
   };
 

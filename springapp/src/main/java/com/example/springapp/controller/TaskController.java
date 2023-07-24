@@ -22,20 +22,20 @@ public class TaskController {
 	private TaskRepository taskrepo;
 	
 	
-	@PostMapping("/tasks")
+	@PostMapping("/user")
 	Task newTask(@RequestBody Task newUser) {
 		return taskrepo.save(newUser);
 	}
-	@GetMapping("/tasks")
+	@GetMapping("/users")
 	List<Task> getAllTasks(){
 		return taskrepo.findAll();
 	}
-	@GetMapping("/tasks/{id}")
+	@GetMapping("/user/{id}")
 	Task getTaskById(@PathVariable Long id) {
 	return taskrepo.findById(id).orElseThrow(()->new TaskNotFoundException(id));
 	}
 
-	@PutMapping("/tasks/{id}")
+	@PutMapping("/user/{id}")
 	Task updateTask(@RequestBody Task newTask,@PathVariable Long id) {
 		return taskrepo.findById(id).map(task->{
 			task.setTaskname(newTask.getTaskname());
@@ -46,7 +46,7 @@ public class TaskController {
 			return taskrepo.save(task);
 		}).orElseThrow(()->new TaskNotFoundException(id));
 	}
-	@DeleteMapping("/tasks/{id}")
+	@DeleteMapping("/user/{id}")
 	String deleteTask(@PathVariable Long id) {
 		if(!taskrepo.existsById(id)) {
 			throw new TaskNotFoundException(id);

@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks");
+    const result = await axios.get("http://localhost:8017/users");
     setUsers(result.data);
   };
 
@@ -65,7 +65,7 @@ export default function Home() {
   });
 
   const deleteUser = async (id) => {
-    await axios.delete(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/tasks/${id}`);
+    await axios.delete(`http://localhost:8017/user/${id}`);
     loadUsers();
   };
 

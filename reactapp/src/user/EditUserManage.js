@@ -33,7 +33,7 @@ const EditUserManage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/users/${id}`, user);
+      await axios.put(`http://localhost:8017/usermanage/${id}`, user);
       navigate("/users"); // Redirect to the user list page
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ const EditUserManage = () => {
 
   const loadData = async () => {
     try {
-      const response = await axios.get(`https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io/users/${id}`);
+      const response = await axios.get(`http://localhost:8017/usermanage/${id}`);
       const userData = response.data;
       setUser(userData);
     } catch (error) {
