@@ -5,7 +5,7 @@ import { Card,Button ,Form,FormText, Toast} from 'react-bootstrap'
 import { useState,useRef } from 'react'
 import {toast,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import emailjs from '@emailjs/browser';
+ import emailjs from '@emailjs/browser';
 import user from './Login'
 import { useNavigate } from 'react-router-dom';
 import {fetchUserData} from './api/Authentication'

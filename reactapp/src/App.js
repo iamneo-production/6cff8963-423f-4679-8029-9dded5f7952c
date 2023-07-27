@@ -1,15 +1,12 @@
-import logo from './logo.svg';
-///import './App.css';
+import './App.css';
 import {BrowserRouter ,Navigate,Route,Routes} from 'react-router-dom';
 import Home from './components/Home';
 import React from 'react';
 import Details  from './components/Details';
-import Documents from './components/Userlist'
 import { useNavigate } from 'react-router-dom';
 import Login from './components/Login'
 import Navbar from './components/Navbar';
-import OfferLetter from './components/Users';
-import {fetchUserData} from './components/api/Authentication'
+import { fetchUserData } from './components/api/Authentication';
 import ProtectedRoute from './components/ProtectedRoute'
 import Userlist from './components/Userlist';
 import Task from './components/Task';
@@ -21,11 +18,11 @@ import ViewTask from './users/ViewTask';
 import TaskHome from './pages/TaskHome';
 import EditUserManage from './user/EditUserManage';
 import DashBoard from './components/DashBoard';
-import Report from './components/Report';
 import AdminReport from './reports/AdminReport';
-import UserReport from './reports/UserReport';
+import UserReport from './reports/ UserReport';
 import ViewAdminReport from './reports/ViewAdminReport';
 import ViewUserReport from './reports/ViewUserReport';
+import Report from './components/Report';
 
 
 
@@ -56,7 +53,7 @@ function closingCode()
               <Route path='/work' element={<Task/>}> </Route>
               <Route path='/candidates' element={<Users/>}> </Route>
               <Route path='/dashboard' element={<DashBoard/>}> </Route>
-              <Route path='/report' element={<Report/>}> </Route>
+             <Route path='/report' and element={<Report/>}></Route>
               <Route exact path="/home" element={<Home />} />
               <Route exact path="/usertask" element={<TaskHome/>} />
           <Route exact path="/addtask" element={<AddTask />} />

@@ -6,10 +6,11 @@ import './Details.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-import { AxiosContext } from 'react-axios/lib/components/AxiosProvider';
+//import { AxiosContext } from 'react-axios/lib/components/AxiosProvider';
 import Table from 'react-bootstrap/Table';
 import Navbar from './Navbar';
 import UserNavbar from './UserNavbar';
+//import {AxiosProvider} from 'react-axios/lib/components/AxiosProvider';
 
 const Details = () => {
   const [show, setShow] = useState(false);

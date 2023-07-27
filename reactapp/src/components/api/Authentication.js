@@ -11,7 +11,7 @@ export const userLogin=(authRequest)=>{
     console.log(authRequest);
     return axios({
         'method':'POST',
-        'url':`${process.env.hostUrl||'http://localhost:8017'}/api/v1/auth/login`,
+        'url':`${process.env.hostUrl||'https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io'}/api/v1/auth/login`,
         'data':authRequest
     })
 }
@@ -19,7 +19,7 @@ export const userLogin=(authRequest)=>{
 export const fetchUserData=()=>{
     return axios({
         method:'GET',
-        url:`${process.env.hostUrl||'http://localhost:8017'}/api/v1/auth/userinfo`,
+        url:`${process.env.hostUrl||'https://8080-ddaedfbeaebcdffcebcccefaedfbdbebed.project.examly.io'}/api/v1/auth/userinfo`,
         headers:{
             'Authorization':'Bearer '+getToken()
         }

@@ -16,8 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.example.springapp.exception.*;
-import com.example.springapp.model.Task;
-import com.example.springapp.model.User;
+import com.example.springapp.model.*;
 import com.example.springapp.repository.*;
 import com.example.springapp.service.*;
 

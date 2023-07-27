@@ -1,7 +1,7 @@
 import React ,{useState,useEffect}from "react";
 import Navbar from './Navbar'
-import AdminDashboard from "./AdminDashBoard";
-import UserDashboard from "./UserDashBoard";
+import AdminDashboard from "./AdminDashboard";
+import UserDashboard from "./UserDashboard";
 
 function DashBoard() {
 
