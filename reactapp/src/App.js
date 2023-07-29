@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import TaskForm from './TaskForm';
-import Home from './Home';
-import TaskList from './TaskList';
-import './App.css'
-=======
 import logo from './logo.svg';
 ///import './App.css';
 import {BrowserRouter ,Navigate,Route,Routes} from 'react-router-dom';
@@ -34,7 +26,6 @@ import AdminReport from './reports/AdminReport';
 import UserReport from './reports/UserReport';
 import ViewAdminReport from './reports/ViewAdminReport';
 import ViewUserReport from './reports/ViewUserReport';
->>>>>>> 6257d0c6770c466a66cb5d280446d01454537bf9
 
 
 
@@ -51,27 +42,7 @@ function closingCode()
 
 
   return (
-<<<<<<< HEAD
-    <Router>
-      <div>
-      <nav className="nav-bar">
-        <div >
-          <ul className="nav-list">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">Home</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/task-form" className="nav-link">Task Form</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/task-list" className="nav-link">Task List</Link>
-            </li>
-          </ul>
-          </div>
-        </nav>
-=======
     <div className="App">
->>>>>>> 6257d0c6770c466a66cb5d280446d01454537bf9
 
       <BrowserRouter>
       {

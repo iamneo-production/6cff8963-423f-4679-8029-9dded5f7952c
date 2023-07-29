@@ -1,43 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-<<<<<<< HEAD
-
-
-.nav-bar {
-  background: #f4f4f4;
-  padding: 10px;
-}
-
-
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: right;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-=======
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   background-image: url("https: //projectsly.com/images/blog/task-management-app-challenges.png?v=1670514978795773617");
->>>>>>> 6257d0c6770c466a66cb5d280446d01454537bf9
 }
 
 .home,
