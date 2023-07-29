@@ -1,12 +1,6 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
+<<<<<<< HEAD
 
 
 .nav-bar {
@@ -36,28 +30,24 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+=======
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-image: url("https: //projectsly.com/images/blog/task-management-app-challenges.png?v=1670514978795773617");
+>>>>>>> 6257d0c6770c466a66cb5d280446d01454537bf9
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home,
+.details,
+.letter,
+.policy{
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
