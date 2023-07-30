@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 com/example/springapp/config/JWTTokenHelper.class
 com/example/springapp/controller/AppController.class
 main/java/com/example/springapp/controller/RegisterController.class
@@ -7,8 +5,8 @@ com/example/springapp/model/User.class
 main/java/com/example/springapp/exception/UserException.class
 com/example/springapp/config/RestAuthentication.class
 com/example/springapp/controller/TaskController.class
-com/example/springapp/exception/TaskNotFoundAdvice.class
 com/example/springapp/controller/UserManageController.class
+com/example/springapp/exception/TaskNotFoundAdvice.class
 com/example/springapp/service/CustomUserService.class
 com/example/springapp/repository/AuthorityDetailsRepository.class
 com/example/springapp/model/Register.class
@@ -18,8 +16,8 @@ main/java/com/example/springapp/exception/UserNotFoundAdvice.class
 com/example/springapp/repository/TaskRepository.class
 com/example/springapp/service/AuthorityService.class
 com/example/springapp/request/AuthenticationRequest.class
-com/example/springapp/config/SecurityConfiguration.class
 com/example/springapp/config/JWTAuthenticationFilter.class
+com/example/springapp/config/SecurityConfiguration.class
 com/example/springapp/response/LoginResponse.class
 TaskService.class
 com/example/springapp/model/Task.class
@@ -29,4 +27,3 @@ com/example/springapp/repository/UserDetailsRepository.class
 com/example/springapp/response/UserInfo.class
 com/example/springapp/exception/TaskNotFoundException.class
 com/example/springapp/model/Authority.class
->>>>>>> 24001aa771e2430776a3ff8b6241546f295b0b7a
